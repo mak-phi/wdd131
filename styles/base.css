@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #6D676E;
+    --secondary-color: #96031A;
+    --background-color: #1B1B1E;
+    --text-color: #FBFFFE;
+    --accent-color: #FAA916;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+#course-title {
+    display: block;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.navigation {
+    background-color: var(--background-color);
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation>a {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent-color);
+    flex: 1 1 auto;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.navigation>a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+main {
+    width: 95%;
+    margin: auto;
+    color: var(--background-color);
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+
+}
+
+main h1 {
+    margin: 0;
+    padding-left: 0.75em;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+main>section:nth-child(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+main>section:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.card {
+    margin: 4px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 0.5em;
+    border-color: var(--primary-color);
+}
+
+.card>h2 {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    /* Hide overlapping header border*/
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+.card p {
+    margin: 0;
+    padding: 1em;
+    text-wrap: wrap;
+}
+
+main>section:nth-child(2) {
+    display: grid;
+    grid-template: auto 1fr auto 1fr / auto 1fr auto;
+}
+
+main>section:nth-child(2)>h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+main>section:nth-child(2)>p:nth-child(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+main>section:nth-child(2)>img {
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+}
+
+main>section:nth-child(2)>h3 {
+    margin: 0;
+    text-align: center;
+    border-bottom: 0.5px solid var(--primary-color);
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0.8em;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+
+main>section:nth-child(2)>figure {
+    margin: 0;
+    text-align: center;
+    font-size: small;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+main>section:nth-child(2)>p:nth-child(6) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#lastModified {
+    color: var(--accent-color);
+}
+
+.card img {
+    margin: 0.5em;
+}
+
+main>section:nth-child(3)>ul {
+    /* Workaround for centering ul element vertically. Refine CSS */
+    padding-top: 100px;
+}
+
+.flavicon {
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+footer figure {
+    margin: 0;
+    display: inline;
+}
+
+.hidden-caption {
+    /* AI assisted code */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+}
+
+@media (max-width: 400px) {
+    /* CSS for devices with maximum screen width of 400px */
+}

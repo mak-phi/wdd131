@@ -4,11 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Roy Mutua"</title>
+    <meta name="description"
+        content="W01 Assignment: Home Page - Roy Mutua | Developed for the course WDD 131 - Dynamic Web Fundamentals at BYU">
+    <meta name="author" content="Roy Mutua">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Roy Mutua</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Roy Mutua</span>
+        <nav class="navigation">
+            <a href="https://www.linkedin.com/in/roy-m-630646201/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng#27?lang=eng">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Roy Mutua</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Roy. I live in Nairobi, Kenya. I love astronomy and learning about our universe. I am curently
+                learning to speak French for my work but I would also love to learn how to speak Japanese just so I
+                could watch my favorite Anime shows without subtitles.</p>
+            <img src="images/profile_picture_150w.jpg" alt="Profile Picture">
+            <h3>The Cosmic Horizon</h3>
+            <figure>
+                <img src="images/galaxy_cluster_240w.png" alt="">
+                <figcaption>Galaxy cluster SMACS 0723</figcaption>
+                <figcaption class="hidden-caption">Image Title: Webb's First Deep Field (MIRI and NIRCam Images Side by
+                    Side)
+                    Creator: NASA and the Space Telescope Science Institute (STScI).
+                    Source: https://stsci-opo.org/STScI-01G8H1W84BMJA3CPD6C5ZW6WSE.png
+                    License: https://webbtelescope.org/copyright
+
+                    Attribution:
+                    "Webb's First Deep Field (MIRI and NIRCam Images Side by Side)" produced for NASA by STScI
+                    publicdomainvectors.org is free to use as in the public domain
+            </figure>
+            <p>
+                Due to the limitations of the speed of light, there is only so much we can currently observe and know
+                about <a href="https://www.britannica.com/science/cosmic-microwave-background">our universe</a>.
+                Wouldn't it be interesting to find out what exists beyond the cosmic horizon: to
+                know the unknowable?
+            </p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">DEV Community</a></li>
+                <li><a href="https://www.theodinproject.com/">The Odin Project</a></li>
+                <li><a href="https://web.dev/">web.dev</a></li>
+                <li><a href="https://www.joshwcomeau.com/">Josh W. Comeau's Blog</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy <span id="currentyear"></span>
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="flavicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        Roy Mutua
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="flavicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption> -->
+        </figure>
+        Kenya
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
