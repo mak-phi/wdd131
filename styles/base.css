@@ -29,10 +29,6 @@ body {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-}
-
 .navigation>a {
     padding: 1em;
     text-align: center;
@@ -153,7 +149,7 @@ footer {
 }
 
 #lastModified {
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .card img {
@@ -163,6 +159,12 @@ footer {
 main>section:nth-child(3)>ul {
     /* Workaround for centering ul element vertically. Refine CSS */
     padding-top: 100px;
+}
+
+main>section:nth-child(3)>ul {
+    /* Workaround for centering ul element vertically. Refine CSS */
+    padding-top: 100px;
+    text-decoration: none;
 }
 
 .flavicon {
