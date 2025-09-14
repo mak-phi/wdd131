@@ -73,7 +73,7 @@ main img {
 }
 
 main figcaption {
-    font-size: 0.6em;
+    font-size: 0.7rem;
     font-weight: 100;
 }
 
@@ -133,7 +133,7 @@ main figcaption {
 }
 
 footer {
-    font-size: 0.6em;
+    font-size: 0.7rem;
     background-color: var(--primary-color);
     text-align: center;
     padding: 1em;
