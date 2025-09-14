@@ -63,6 +63,13 @@ main {
 
 main h1 {
     font-size: 1.5em;
+    align-items: center;
+}
+
+main img {
+    /* Prevent images from overflowing the main container */
+    max-width: 100%;
+    height: auto;
 }
 
 main figcaption {
@@ -126,6 +133,7 @@ main figcaption {
 }
 
 footer {
+    font-size: 0.6em;
     background-color: var(--primary-color);
     text-align: center;
     padding: 1em;
