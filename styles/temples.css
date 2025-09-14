@@ -1,3 +1,4 @@
+/*********** Start of universal styling ***********/
 :root {
     --primary-color: #6D676E;
     --secondary-color: #96031A;
@@ -23,14 +24,13 @@ header {
 
 header h1 {
     padding: 8px;
-    display: block;
     text-wrap: nowrap;
 }
 
+/*********** Start of basic navigation styling ***********/
 nav ul {
     text-align: center;
     list-style: none;
-    display: none;
 }
 
 nav a {
@@ -39,15 +39,6 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     color: var(--accent-color);
-    display: none;
-}
-
-.open a {
-    display: block;
-}
-
-a:hover {
-    color: var(--secondary-color);
 }
 
 nav a:hover {
@@ -55,61 +46,22 @@ nav a:hover {
     color: var(--text-color);
 }
 
-main {
-    max-width: 620px;
-    margin: 0 auto;
-    text-align: center;
-}
+/*********** End of basic navigation links styling ***********/
 
 main h2 {
     font-size: 1.5em;
     align-items: center;
 }
 
-main img {
-    /* Prevent images from overflowing the main container */
-    max-width: 100%;
-    height: auto;
+main>figure img:hover {
+    /* Box -shadow effect consisting of two layered shadows. Style courtesy of W3 Schools. Source: https://www.w3schools.com/css/css3_shadows_box.asp  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-main figcaption {
+main>figure figcaption {
     font-size: 0.8rem;
     font-weight: 100;
 }
-
-/********* Menu button styling *********/
-.menu {
-    font-size: 1rem;
-    background: none;
-    color: var(--text-color);
-    position: absolute;
-    top: 0.4rem;
-    right: 0.4rem;
-}
-
-.menu::before {
-    content: "☰";
-}
-
-.menu .open::before {
-    content: "❎";
-}
-
-.open h1 {
-    display: none;
-}
-
-.open nav ul {
-    text-align: center;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.open nav li {
-    flex: 1 1 100%;
-}
-
 
 /********* Standard footer styling *********/
 
@@ -144,4 +96,63 @@ footer {
 footer figure {
     margin: 0;
     display: inline;
+}
+
+/*********** End of universal styling ***********/
+
+
+
+/*********** Begin styling for small screen ***********/
+
+header h1 {
+    display: block;
+}
+
+header nav ul {
+    display: none;
+}
+
+.menu {
+    font-size: 1rem;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+main {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main>figure img {
+    /* Prevent images from overflowing the main container */
+    max-width: 100%;
+    height: auto;
+}
+
+/*********** Begin toggle styling ***********/
+
+
+.menu.open::before {
+    content: "❎";
+}
+
+.open>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.open>ul li {
+    flex: 1 1 100%;
+}
+
+.open li>a {
+    display: block;
 }

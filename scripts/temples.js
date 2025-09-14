@@ -10,22 +10,31 @@ menuBtn.classList.add("menu");
 header.insertBefore(menuBtn, header.children[1]);
 
 menuBtn.addEventListener("click", () => {
-    header.classList.toggle("open");
     navigation.classList.toggle("open");
     menuBtn.classList.toggle("open");
 });
 
 let activeNavigationKey = null;
+let clickCount = 0;
 
 navigation.addEventListener("click", (event) => {
+    /* Determine target nav key and assign "active" class for wayfinder styling */
     const target = event.target;
     if (target !== navigation) {
-        if (activeNavigationKey) {
-            activeNavigationKey.classList.remove("active");
+        clickCount++;
+        if (clickCount == 1) {
+            /* Check if nav key is clicked once and hide nav list after click */
+            if (activeNavigationKey) {
+                activeNavigationKey.classList.remove("active");
+            }
+            target.classList.add("active");
+            activeNavigationKey = target;
+
+            pageHeader.textContent = activeNavigationKey.textContent;
+
+            navigation.classList.toggle("open");
+            clickCount = 0;
         }
-        target.classList.add("active");
-        activeNavigationKey = target;
-        pageHeader.textContent = activeNavigationKey.textContent;
     }
     else {
         if (activeNavigationKey) {
