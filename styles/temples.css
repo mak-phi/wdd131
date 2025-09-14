@@ -134,7 +134,7 @@ main figcaption {
 
 footer {
     font-size: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
     padding: 1em;
