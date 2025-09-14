@@ -1,0 +1,60 @@
+@media only screen and (min-width: 621px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    header h1 {
+        flex: 1 1 60%;
+    }
+
+    nav {
+        flex: 1 1 40%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    nav li {
+        text-wrap: nowrap;
+        flex: 1 1 20%;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8em;
+        align-items: center;
+    }
+
+    main h1 {
+        grid-column: 1 / 4;
+    }
+
+    main img {
+        /* Prevent images from overflowing the main container */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .active::before {
+        content: "🕊";
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #6D676E;
+    --secondary-color: #96031A;
+    --background-color: #1B1B1E;
+    --text-color: #FBFFFE;
+    --accent-color: #FAA916;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header h1 {
+    padding: 8px;
+    display: block;
+    text-wrap: nowrap;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    display: none;
+}
+
+nav a {
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--accent-color);
+    display: none;
+}
+
+.open a {
+    display: block;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+main {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 1.5em;
+}
+
+main figcaption {
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+/********* Menu button styling *********/
+.menu {
+    font-size: 1rem;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.menu .open::before {
+    content: "❎";
+}
+
+.open h1 {
+    display: none;
+}
+
+.open nav ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.open nav li {
+    flex: 1 1 100%;
+}
+
+
+/********* Standard footer styling *********/
+
+.flavicon {
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.hidden-caption {
+    /* AI assisted code */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer figure {
+    margin: 0;
+    display: inline;
+}
