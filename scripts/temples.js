@@ -4,8 +4,6 @@ const pageHeader = document.querySelector("main").children[0];
 
 pageHeader.textContent = document.querySelector(".active").innerHTML;
 
-
-
 const menuBtn = document.createElement("button");
 
 menuBtn.classList.add("menu");
