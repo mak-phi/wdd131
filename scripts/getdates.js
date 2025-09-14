@@ -10,4 +10,4 @@ currentYear.textContent = today.getFullYear();
 const lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = `Last Modification: ${lastModified}`;
 
-console.log("This script is running");
+// console.log("This script is running");
