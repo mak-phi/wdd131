@@ -33,6 +33,7 @@ navigation.addEventListener("click", (event) => {
             pageHeader.textContent = activeNavigationKey.textContent;
 
             navigation.classList.toggle("open");
+            menuBtn.classList.toggle("open");
             clickCount = 0;
         }
     }
