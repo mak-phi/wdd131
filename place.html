@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Roy Mutua"</title>
+    <meta name="description"
+        content="W01 Assignment: Country - Roy Mutua | Developed for the course WDD 131 - Dynamic Web Fundamentals at BYU">
+    <meta name="author" content="Roy Mutua">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Jaisalmer City</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:501px )" srcset="images/jaisalmar_1280w.webp" type="image/webp">
+                <!-- Photo by <a href="https://unsplash.com/@sergio_capuzzimati?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sergio Capuzzimati</a> on <a href="https://unsplash.com/photos/body-of-water-near-bridge-during-daytime-DL-4g1jvG_o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+                <source media="(max-width:500px )" srcset="images/jaisalmar_city_500w.webp" type="image/webp">
+                <!-- Photo by <a href="https://unsplash.com/@yogendras31?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yogendra Singh</a> on <a href="https://unsplash.com/photos/an-aerial-view-of-a-city-AQdJAJuBu7s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+                <img src="images/jaisalmar_city_500w.webp" alt="Aerial VIew of Jaisalmar, Rajasthan, India">
+            </picture>
+        </div>
+        <section class="card">
+            <h3>Data</h3>
+            <div>
+                <div class="info">
+                    <label for="established">Established: </label>
+                    <input type="text" value="1156" id="established" readonly>
+
+                </div>
+                <div class="info">
+                    <label for="founded">Founded by: </label>
+                    <input type="text" value="Rawal Jaisal" id="founded" readonly>
+                </div>
+                <div class="info">
+                    <label for="elevation">Elevation: </label>
+                    <input type="text" value="225 m (738 ft)" id="elevation" readonly>
+                </div>
+                <div class="info">
+                    <label for="population">Population: </label>
+                    <input type="text" value="93,000" id="population" readonly>
+                </div>
+                <div class="info">
+                    <label for="languages">Languages: </label>
+                    <input type="text" value="Hindi, Rajasthani, English" id="languages" readonly>
+
+                </div>
+                <div class="info">
+                    <label for="district">District: </label>
+                    <input type="text" value="Jaisalmer" id="district" readonly>
+                </div>
+                <div class="info">
+                    <label for="state">State: </label>
+                    <input type="text" value="Rajasthan, India" id="state" readonly>
+                </div>
+                <div class="info">
+                    <label for="currency">Currency: </label>
+                    <input type="text" value="Indian Rupee (INR)" id="currency" readonly>
+                </div>
+                <div class="info">
+                    <label for="time-zone">Time Zone: </label>
+                    <input type="text" value="UTC+5:30" id="time-zone" readonly>
+                </div>
+                <div class="info">
+                    <label for="telephone-code">Telephone Code: </label>
+                    <input type="text" value="+91-02992" id="telephone-code" readonly>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Weather</h3>
+            <img src="images/hot_sun_sunny_weather_icon.svg" alt="">
+            <div>
+                <div class="info">
+                    <label for="temperature">Temperature: </label>
+                    <input type="text" id="temperature" readonly>
+
+                </div>
+                <div class="info">
+                    <label for="conditions">Conditions: </label>
+                    <input type="text" id="conditions" readonly>
+                </div>
+                <div class="info">
+                    <label for="wind-speed">Wind: </label>
+                    <input type="text" id="wind-speed" readonly>
+                </div>
+                <div class="info">
+                    <label for="wind-chill">Wind Chill: </label>
+                    <input type="text" id="wind-chill" readonly>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> © <span id="currentyear"></span></p>
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Roy Mutua</span>
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Kenya</span>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
