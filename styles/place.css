@@ -34,7 +34,7 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     padding: 0 1.2rem 1.2rem 1.2rem;
     font-size: 1.6rem;
     text-align: center;
@@ -135,13 +135,13 @@ footer figure {
     }
 
 
-    h3 {
+    h2 {
         background-color: var(--text-color);
         color: black;
         text-align: center;
     }
 
-    .card:nth-child(3) h3 {
+    .card:nth-child(3) h2 {
         background-color: var(--primary-color);
         padding-top: 1.2rem;
         text-align: left;
@@ -154,9 +154,13 @@ footer figure {
         display: none;
     }
 
-    .card:nth-child(3) h3::after {
+    .card:nth-child(3) h2::after {
         content: " ☀️";
         font-size: 1.8rem;
+    }
+
+    .card {
+        background-color: #FCE5124D;
     }
 
 }
@@ -180,7 +184,7 @@ footer figure {
         right: 2%;
     }
 
-    h3 {
+    h2 {
         background-color: var(--primary-color);
         padding: 1.2rem;
         text-align: left;
@@ -193,7 +197,7 @@ footer figure {
         display: none;
     }
 
-    .card:nth-child(3) h3::after {
+    .card:nth-child(3) h2::after {
         content: " ☀️";
         font-size: 1.8rem;
     }
