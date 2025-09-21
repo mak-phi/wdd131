@@ -148,6 +148,8 @@ footer figure {
         position: relative;
         left: -8%;
         color: var(--text-color);
+        /* Box -shadow effect consisting of two layered shadows. Style courtesy of W3 Schools. Source: https://www.w3schools.com/css/css3_shadows_box.asp  */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .card:nth-child(3) img {
@@ -200,6 +202,15 @@ footer figure {
     .card:nth-child(3) h2::after {
         content: " ☀️";
         font-size: 1.8rem;
+    }
+
+    .card:nth-child(2) {
+        border-bottom: none;
+    }
+
+    .card h2 {
+        /* Box -shadow effect consisting of two layered shadows. Style courtesy of W3 Schools. Source: https://www.w3schools.com/css/css3_shadows_box.asp  */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 }
