@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <title>WDD 131 - Lazyloading Activity</title>
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading Demonstration</h1>
+        <img src="https://picsum.photos/400/600" alt="Placeholder image 1" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/450/675" alt="Placeholder image 2" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/500/750" alt="Placeholder image 3" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/550/825" alt="Placeholder image 4" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/600/900" alt="Placeholder image 5" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/650/975" alt="Placeholder image 6" width="400" height="600" loading="lazy">
+    </main>
+    <footer>
+        <p> © <span id="currentyear"></span></p>
+        <figure><img src="../images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Roy Mutua</span>
+        <figure><img src="../images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Kenya</span>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
