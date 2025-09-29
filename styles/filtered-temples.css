@@ -1,0 +1,168 @@
+/*********** Start of universal styling ***********/
+:root {
+    --primary-color: #6D676E;
+    --secondary-color: #96031A;
+    --background-color: #1B1B1E;
+    --text-color: #FBFFFE;
+    --accent-color: #FAA916;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header h1 {
+    padding: 8px;
+    text-wrap: nowrap;
+}
+
+/*********** Start of basic navigation styling ***********/
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav a {
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--accent-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/*********** End of basic navigation links styling ***********/
+
+main h2 {
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.temple-card img:hover {
+    /* Box -shadow effect consisting of two layered shadows. Style courtesy of W3 Schools. Source: https://www.w3schools.com/css/css3_shadows_box.asp  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.temple-card {
+    font-size: 0.8rem;
+    font-weight: 100;
+    background-color: rgba(109, 103, 110, 0.2);
+    color: var(--background-color);
+    padding: 0.8rem;
+    text-wrap: no-wrap;
+}
+
+.temple-card img {
+    margin-top: 0.8rem;
+}
+
+/********* Standard footer styling *********/
+
+.favicon {
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.hidden-caption {
+    /* AI assisted code */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+}
+
+footer {
+    font-size: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer figure {
+    margin: 0;
+    display: inline;
+}
+
+/*********** End of universal styling ***********/
+
+
+
+/*********** Begin styling for small screen ***********/
+
+header h1 {
+    display: block;
+}
+
+header nav ul {
+    display: none;
+}
+
+.menu {
+    font-size: 1rem;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+main {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main>figure img {
+    /* Prevent images from overflowing the main container */
+    max-width: 100%;
+    height: auto;
+}
+
+/*********** Begin toggle styling ***********/
+
+
+.menu.open::before {
+    content: "❎";
+}
+
+.open>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.open>ul li {
+    flex: 1 1 100%;
+}
+
+.open li>a {
+    display: block;
+}
