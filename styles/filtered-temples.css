@@ -66,7 +66,6 @@ main h2 {
     background-color: rgba(109, 103, 110, 0.2);
     color: var(--background-color);
     padding: 0.8rem;
-    text-wrap: no-wrap;
 }
 
 .temple-card img {
@@ -91,7 +90,7 @@ main h2 {
     overflow: hidden;
     border: 0;
     white-space: nowrap;
-    clip-path: rect(0, 0, 0, 0);
+    clip-path: rect(0 0 0 0);
 }
 
 footer {
