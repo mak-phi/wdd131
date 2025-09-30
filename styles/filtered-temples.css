@@ -47,7 +47,6 @@ nav a:hover {
 }
 
 /*********** End of basic navigation links styling ***********/
-
 main h2 {
     font-size: 1.5em;
     align-items: center;
@@ -74,7 +73,6 @@ main h2 {
 }
 
 /********* Standard footer styling *********/
-
 .favicon {
     vertical-align: bottom;
     width: 16px;
@@ -109,8 +107,6 @@ footer figure {
 }
 
 /*********** End of universal styling ***********/
-
-
 
 /*********** Begin styling for small screen ***********/
 
@@ -148,8 +144,6 @@ main>figure img {
 }
 
 /*********** Begin toggle styling ***********/
-
-
 .menu.open::before {
     content: "❎";
 }
@@ -165,4 +159,74 @@ main>figure img {
 
 .open li>a {
     display: block;
+}
+
+@media only screen and (min-width: 620px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        flex: 1 1 60%;
+    }
+
+    header nav {
+        flex: 1 1 40%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .open ul,
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav li {
+        text-wrap: nowrap;
+        flex: 1 1 20%;
+    }
+
+    header nav a {
+        display: block;
+    }
+
+    .gallery-container {
+        margin: 0 auto;
+        display: grid;
+        gap: 0.8em;
+        align-items: start;
+    }
+
+    .grid-one {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h2 {
+        padding: 0.8em;
+    }
+
+    .temple-card img {
+        /* Prevent images from overflowing the main container */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .active::before {
+        content: "🕊";
+        font-size: 0.6em;
+    }
 }
