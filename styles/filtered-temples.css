@@ -70,6 +70,7 @@ main h2 {
 
 .temple-card img {
     margin-top: 0.8rem;
+    max-width: 400px;
 }
 
 /********* Standard footer styling *********/
