@@ -70,40 +70,40 @@ const temples = [
         location: "Snowflake, Arizona, United States",
         dedicated: "2002, March 3",
         area: 18621,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/snowflake-arizona-temple/snowflake-arizona-temple-53352.jpg"
+        imageUrl: "images/snowflake-arizona-temple-960.webp"
+        //  Original image url: https://churchofjesuschristtemples.org/assets/img/temples/snowflake-arizona-temple/snowflake-arizona-temple-53352.jpg
     },
     {
         templeName: "Nairobi Kenya",
         location: "Nairobi, Kenya",
         dedicated: "2025, May, 18",
         area: 19870,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-56573.jpg"
+        imageUrl: "images/nairobi-kenya-temple-960.webp"
+        //  Original image url: https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-56573.jpg
     },
     {
         templeName: "Preston England",
         location: "Preston, England",
         dedicated: "1998, June, 10",
         area: 69630,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/preston-england-temple/preston-england-temple-56872.jpg"
+        imageUrl: "images/preston-england-temple-960.webp"
+        //  Original image url: https://churchofjesuschristtemples.org/assets/img/temples/preston-england-temple/preston-england-temple-56872.jpg
     },
     {
         templeName: "Rio de Janeiro Brazil",
         location: "Rio de Janeiro, Brazil",
         dedicated: "2022, May, 8",
         area: 29966,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/rio-de-janeiro-brazil-temple/rio-de-janeiro-brazil-temple-8162.jpg"
+        imageUrl: "images/rio-de-janeiro-brazil-temple-960.webp"
+        // Original image url: https://churchofjesuschristtemples.org/assets/img/temples/rio-de-janeiro-brazil-temple/rio-de-janeiro-brazil-temple-8162.jpg
     },
     {
         templeName: "Sapporo Japan",
         location: "Sapporo, Japan",
         dedicated: "2016, August, 21",
         area: 48480,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3370.jpg"
+        imageUrl: "images/sapporo-japan-temple-960.webp"
+        // Original image url: https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3370.jpg
     },
     // Add more temple objects here...
 ];
