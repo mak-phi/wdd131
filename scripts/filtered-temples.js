@@ -111,6 +111,7 @@ const temples = [
 pageHeader.textContent = document.querySelector(".active").innerHTML;
 
 menuBtn.classList.add("menu");
+menuBtn.setAttribute("aria-label", "Menu");
 header.insertBefore(menuBtn, header.children[1]);
 
 menuBtn.addEventListener("click", () => {
