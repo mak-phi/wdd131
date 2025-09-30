@@ -66,14 +66,6 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Snowflake Arizona",
-        location: "Snowflake, Arizona, United States",
-        dedicated: "2002, March 3",
-        area: 18621,
-        imageUrl: "images/snowflake-arizona-temple-960.webp"
-        //  Original image url: https://churchofjesuschristtemples.org/assets/img/temples/snowflake-arizona-temple/snowflake-arizona-temple-53352.jpg
-    },
-    {
         templeName: "Nairobi Kenya",
         location: "Nairobi, Kenya",
         dedicated: "2025, May, 18",
