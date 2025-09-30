@@ -38,7 +38,7 @@
         margin: 0 auto;
         display: grid;
         gap: 0.8em;
-        align-items: center;
+        align-items: start;
     }
 
     .grid-one {
