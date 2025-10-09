@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Roy Mutua"</title>
+    <meta name="description"
+        content="W05 Assignment: Product Review Form - Roy Mutua | Developed for the course WDD 131 - Dynamic Web Fundamentals at BYU">
+    <meta name="author" content="Roy Mutua">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <form method="get" action="review.html" class="review">
+        <fieldset class="container">
+            <legend>Product Review</legend>
+            <fieldset>
+                <label for="product" class="required">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="default" selected disabled>Select a Product</option>
+                </select>
+                <div class="required">Overall Rating</div>
+                <div class="star-rating">
+                    <label for="1"></label>
+                    <input type="radio" id="1" name="rating" value="1" required>
+                    <label for="2"></label>
+                    <input type="radio" id="2" name="rating" value="2" required>
+                    <label for="3"></label>
+                    <input type="radio" id="3" name="rating" value="3" required>
+                    <label for="4"></label>
+                    <input type="radio" id="4" name="rating" value="4" required>
+                    <label for="5"></label>
+                    <input type="radio" id="5" name="rating" value="5" required>
+                </div>
+                <label for="date" class="required">Date of Installation</label>
+                <input type="date" name="date" id="date" required>
+            </fieldset>
+            <fieldset>
+                <p>Which features did you find useful un the product? <br><span class="instructions">(Check all that
+                        apply)</span></p>
+                <label><input type="checkbox" id="durable" name="durable" value="yes">Durability</label>
+                <label><input type="checkbox" id="easy" name="easy" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performant" name="performant" value="yes">Performance</label>
+                <label><input type="checkbox" id="simple" name="simple" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <label for="comment">Written Review <span class="instructions">(Optional)</span></label>
+                <textarea id="comment" name="comment" placeholder="Enter your comments here"></textarea>
+                <label for="username">Your Name <span class="instructions">(Optional)</span>
+                    <input type="text" id="username" name="username" autocomplete="name"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </fieldset>
+    </form>
+    <footer>
+        <p> © <span id="currentyear"></span></p>
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Roy Mutua</span>
+        <figure><img src="images/kenya-flag-lion-emblem.svg" alt="Kenyan flag icon" class="favicon">
+            <figcaption class="hidden-caption">Image Title: Kenya flag lion emblem
+                Creator: publicdomainvectors.org
+                Source: https://freesvg.org/download/189725
+                License: Public Domain
+
+                Attribution:
+                "Kenya flag lion emblem" by publicdomainvectors.org is licensed under Public Domain</figcaption>
+        </figure>
+        <span>Kenya</span>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #6D676E;
+    --secondary-color: #96031A;
+    --background-color: #1B1B1E;
+    --text-color: #FBFFFE;
+    --accent-color: #FAA916;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/********* Form styling *********/
+
+.review {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.review fieldset {
+    border: none;
+    margin-bottom: 0.8rem;
+}
+
+.review fieldset:nth-child(1) {
+    border: solid 1px var(--primary-color);
+    border-radius: 4px;
+    padding: 0.8rem;
+}
+
+.review legend {
+    padding-left: 0.1rem;
+    padding-right: 0.4rem;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.review label {
+    display: block;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+.review div:nth-child(3) {
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+.review input[type="text"],
+.review input[type="date"],
+.review textarea,
+.review select,
+.review input[type="submit"] {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.review input[type="text"],
+.review input[type="date"],
+.review textarea,
+.review select {
+    color: var(--primary-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+.review input[type="text"]:hover,
+.review input[type="date"]:hover,
+.review textarea:hover,
+.review select:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.review input[type="text"]:focus-visible,
+.review input[type="date"]:focus,
+.review textarea:focus,
+.review select:focus {
+    border: 2px solid var(--accent-color);
+}
+
+.review input[type="checkbox"] {
+    margin-right: 0.6rem;
+}
+
+.required::after {
+    content: "*";
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.instructions {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.review p {
+    margin-top: 0.8rem;
+}
+
+#comment {
+    height: 100px;
+}
+
+/********* Submit button *********/
+.review input[type="submit"] {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border: none;
+
+
+}
+
+/********* Star rating *********/
+.star-rating {
+    display: flex;
+    justify-content: left;
+}
+
+.star-rating>input[type="radio"] {
+    appearance: none;
+}
+
+.star-rating>label {
+    margin: 0;
+    padding: 0.3rem;
+    color: gold;
+}
+
+.star-rating>label:hover {
+    color: var(--background-color);
+}
+
+.star-rating>label::after {
+    content: "\2605";
+    font-size: 1.8rem;
+}
+
+.star-rating>input[type="radio"]:checked~label::after {
+    content: "\2606";
+}
+
+
+/********* Standard footer styling *********/
+.favicon {
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.hidden-caption {
+    /* AI assisted code */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(0 0 0 0);
+}
+
+footer {
+    font-size: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer figure {
+    margin: 0;
+    display: inline;
+}
+
+/********* Review page styling *********/
+.message p {
+    padding: 4rem;
+    /* justify-self: center; */
+    text-align: center;
+}
