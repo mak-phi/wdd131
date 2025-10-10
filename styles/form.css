@@ -16,6 +16,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h1 {
+    padding: 0.8rem;
+}
+
 /********* Form styling *********/
 
 .review {
