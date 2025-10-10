@@ -91,6 +91,11 @@ h1 {
     border: 2px solid var(--accent-color);
 }
 
+.review select:required:invalid:focus,
+.review input[type="date"]:required:invalid:focus {
+    border: 2px solid var(--secondary-color);
+}
+
 .review input[type="checkbox"] {
     margin-right: 0.6rem;
 }
@@ -122,37 +127,36 @@ h1 {
     color: var(--background-color);
     background-color: var(--accent-color);
     border: none;
-
-
 }
 
 /********* Star rating *********/
 .star-rating {
     display: flex;
     justify-content: left;
+    flex-direction: row-reverse;
 }
 
 .star-rating>input[type="radio"] {
     appearance: none;
 }
 
-.star-rating>label {
+.star-rating label {
     margin: 0;
     padding: 0.3rem;
     color: gold;
 }
 
-.star-rating>label:hover {
+.star-rating label:hover {
     color: var(--background-color);
 }
 
 .star-rating>label::after {
-    content: "\2605";
+    content: "\2606";
     font-size: 1.8rem;
 }
 
-.star-rating>input[type="radio"]:checked~label::after {
-    content: "\2606";
+.star-rating input:checked~label::after {
+    content: "\2605";
 }
 
 
