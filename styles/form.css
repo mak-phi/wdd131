@@ -101,9 +101,10 @@ h1 {
 }
 
 .required::after {
-    content: "*";
+    content: "* (required)";
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    vertical-align: super;
 }
 
 .instructions {
