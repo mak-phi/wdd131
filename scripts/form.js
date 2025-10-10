@@ -1,4 +1,6 @@
 const productSelectionList = document.querySelector("#product");
+const reviewForm = document.querySelector(".review");
+
 const products = [
     {
         id: "fc-1888",
@@ -46,3 +48,14 @@ function capitalizeWords(words) {
 }
 
 populateProducts();
+
+reviewForm.addEventListener("submit", () => {
+    let count = 0;
+    if (!window.localStorage.getItem("countOfReviews")) {
+        count++;
+    } else {
+        count = parseInt(localStorage.getItem("countOfReviews"));
+        count++;
+    }
+    window.localStorage.setItem("countOfReviews", JSON.stringify(count));
+});
